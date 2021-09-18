@@ -4,41 +4,39 @@ config.sh is going to install mutt and set up the configuration file.
 It will be set up properly to work with gmail.
 It is recommended to test the functionality at the end of the config file.
 the dailyAvg.sh file was made to work well with crontab to be scheduled to run each hour
-The dailyAvg.sh file has the following functionality:
-->Store the current value of the set up crypto each hour
-->At the end of each day:
----->The date is stored into the spreadsheet
----->an average is calculated and is stored into the spreadsheet
----->the previous day mined amount is added to the spreadsheet
----->the previous day mining value (avg * total mined) is added to the spreadsheet
-
-
-Make sure your gmail is configured correctly:
-->Manage your google account
--->select the security tab
---->turn on less secure app access
-
-Run config.sh. This will install and configure mutt to run off your email.
-(Will work for any email but is configured currently for gmail SSL)
-
-in ObtainBalance.js, a proper wallet address needs to be added.
-in ObtainBalance.js, a proper rpc address needs to be set up.
-
-
-In order to run properly, the following must be set up correctly in dailyAvg.sh.
-
-Directory (dir):
-The directory must be altered to be the current directory these files are placed in.
-For example if the .sh file is located in
-/home/usr/Desktop/File.sh
-the directory in File.sh needs to be set to 
-/home/Desktop
-
-API key must be set. APIID must be set. Heres documentaion for more detail.
-https://coinmarketcap.com/api/documentation/v1/#
-
-Email Functionality:
-DestEmail must be set to the desired email for recieving emails every friday.
-Emails will arrive every friday at ~11pm
-
+<br><br><br>
+The dailyAvg.sh file has the following functionality:<br>
+->Store the current value of the set up crypto each hour<br>
+->At the end of each day:<br>
+---->The date is stored into the spreadsheet<br>
+---->an average is calculated and is stored into the spreadsheet<br>
+---->the previous day mined amount is added to the spreadsheet<br>
+---->the previous day mining value (avg * total mined) is added to the spreadsheet<br>
+<br><br>
+Make sure your gmail is configured correctly:<br>
+->Manage your google account<br>
+-->select the security tab<br>
+--->turn on less secure app access<br>
+<br><br>
+Run config.sh. This will install and configure mutt to run off your email.<br>
+(Will work for any email but is configured currently for gmail SSL)<br>
+<br><br>
+in ObtainBalance.js, a proper wallet address needs to be added.<br>
+in ObtainBalance.js, a proper rpc address needs to be set up.<br>
+<br><br>
+In order to run properly, the following must be set up correctly in dailyAvg.sh.<br>
+Directory (dir):<br>
+The directory must be altered to be the current directory these files are placed in.<br>
+For example if the .sh file is located in<br>
+/home/usr/Desktop/File.sh<br>
+the directory in File.sh needs to be set to <br>
+/home/Desktop<br>
+<br><br>
+API key must be set. APIID must be set. Heres documentaion for more detail.<br>
+https://coinmarketcap.com/api/documentation/v1/# <br>
+<br><br>
+Email Functionality:<br>
+DestEmail must be set to the desired email for recieving emails every friday.<br>
+Emails will arrive every friday at ~11pm<br>
+<br><br>
 Crontab can now be set to run the dailyAvg.sh script every hour
