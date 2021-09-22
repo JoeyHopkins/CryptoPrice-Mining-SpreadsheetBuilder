@@ -21,6 +21,7 @@ Make sure your gmail is configured correctly:<br>
 Run config.sh. This will install and configure mutt to run off your email.<br>
 (Will work for any email but is configured currently for gmail SSL)<br>
 <br><br>
+In order for ObtainBalance.js to work, web3 needs to be installed (npm install web3)<br>
 in ObtainBalance.js, a proper wallet address needs to be added.<br>
 in ObtainBalance.js, a proper rpc address needs to be set up.<br>
 <br><br>
